@@ -25,6 +25,8 @@ was used here as an example of ‘fair-use’ in fan-art and as of course as mer
 This Widget is a moveable widget that you can move anywhere around the desktop 
 as you require.
 
+![about2](https://github.com/yereverluvinunclebert/Commando-Ywidget/assets/2788342/a057439c-44ec-4147-bd66-bc5d67bdaa89)
+
 All javascript widgets need an engine to function, in this case the widget uses 
 the Yahoo Widget Konfabulator engine. The engine interprets the javascript and 
 creates the widget according to the XML description and using the images you 
