@@ -236,6 +236,20 @@ function menuitem7OnClick() {
 //=====================
 
 //===========================================
+// this function opens the URL for paypal
+//===========================================
+function donate() {
+    var answer = alert("Help support the creation of more widgets like this, send us a coffee! This button opens a browser window and connects to the Kofi donate page for this widget). Will you be kind and proceed?", "Open Browser Window", "No Thanks");
+
+    if (answer === 1) {
+                openURL("https://www.ko-fi.com/yereverluvinunclebert");
+    }
+}
+//=====================
+//End function
+//=====================
+
+//===========================================
 // this function opens the browser at the contact URL
 //===========================================
 function facebookChat() {
@@ -280,23 +294,21 @@ function nullfunction() {
 function findWidget() {
 
  // temporary development version of the widget
- //var widgetName = "magnifier2.widget";
-	var widgetFullPath = convertPathToPlatform(system.userWidgetsFolder + "/" + widgetName);
-	var alertString = "The widget folder is: \n";
-//	var answer;
+    var widgetFullPath = convertPathToPlatform(system.userWidgetsFolder + "/" + widgetName);
+    var alertString = "The widget folder is: \n";
+    if (filesystem.itemExists(widgetFullPath)) {
+        alertString += system.userWidgetsFolder + " \n\n";
+        alertString += "The widget name is: \n";
+        alertString += widgetName + ".\n ";
 
-	alertString += system.userWidgetsFolder + " \n\n";
-	alertString += "The widget name is: \n";
-	alertString += widgetName + ".\n ";
-//	answer =
-	alert(alertString, "Open the widget's folder?", "No Thanks");
-	if (filesystem.itemExists(widgetFullPath)) {
-		//dosCommand = "Explorer.exe /e, /select,E:\\Documents and Settings\\Dean Beedell\\My Documents\\My Widgets\\mars 2.widget";
-		//dosCommand = "Explorer.exe /e, /select," + widgetFullPath;
-		//print("dosCommand " + dosCommand);
-		//var explorerExe = runCommand(dosCommand, "bgResult");
-		filesystem.reveal(widgetFullPath);
-	}
+        alert(alertString, "Open the widget's folder?", "No Thanks");
+
+        filesystem.reveal(widgetFullPath);
+    } else {
+        widgetFullPath = resolvePath(".");   
+        filesystem.reveal(widgetFullPath);
+        print("widgetFullPath " + widgetFullPath);
+    }
 }
 //=====================
 //End function
@@ -431,6 +443,14 @@ function setmenu() {
         sItem.title = "See More Widgets";
         sItem.onSelect = function () {
             otherwidgets();
+        };
+        mItem.appendChild(sItem);
+        
+        
+        sItem = new MenuItem();
+        sItem.title = "Donate a Coffee with Ko-Fi";
+        sItem.onSelect = function () {
+            donate();
         };
         mItem.appendChild(sItem);
 

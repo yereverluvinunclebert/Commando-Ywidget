@@ -329,7 +329,8 @@
     
 
   <preference hidden="true" description="Development ONLY: Enter your editor path here along with any command line switches required to open this widget in the editor. This function only operates if the widget has been unpacked and DEBUG is ON. " name="imageEditPref" group="development" title="Default Editor:" defaultValue="" type="text"/>
-
+  <preference hidden="false" description="Default command to run when the gauge receives a double-click. %SystemRoot%/system32/perfmon.exe" name="imageCmdPref" group="development" title="Double-Click command" defaultValue="%SystemRoot%/system32/perfmon.exe" type="text"/>
+	
 	<preference hidden="true" group="configuration" description="Check this box if you don't want to see the Licence Conditions again." name="licenceHide" title="Don't Show Licence Again" defaultValue="0" type="checkbox"/>
 
 	<preference hidden="false" group="configuration" description="The scroll-wheel resizing direction can be determined here." name="MouseWheelPref" title="Mouse Scroll Wheel" defaultValue="up" type="popup">
@@ -404,6 +405,9 @@
 		<hidden>true</hidden>
 		<description>The widget's vertical location stored in pixels.</description>
 	</preference>
+	 
+ 
+ 
 
 	<script src="script.js"/>
 	<script src="vitality.js"/>
