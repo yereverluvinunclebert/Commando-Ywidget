@@ -1,20 +1,27 @@
 # Commando-Ywidget
- 
+
+ ![commando](https://github.com/yereverluvinunclebert/Commando-Ywidget/assets/2788342/b94d6c8d-3292-42a0-a48c-c45ae42ceb11)
+
 Panzer CPU Gauge Yahoo Widget, written in Javascript and XML for the Yahoo 
 Widget (Konfabulator) Engine. Created for XP, Vista, Win7, 8, 10+ as well as the 
 Apple Mac.
 
+![basewithflares](https://github.com/yereverluvinunclebert/Commando-Ywidget/assets/2788342/f33c820a-cd94-46c0-b02e-93ec4f0b5508)
 
 SmallBrownDog's superb interpretation of a typical Commando Comic cover of the 
 1960s - animated and given life!
+
+![sellIt](https://github.com/yereverluvinunclebert/Commando-Ywidget/assets/2788342/57af3149-ac96-46c5-9162-537e349eae8e)
 
 Created with SBD's kind permission. I have taken SBD's two-dimensional image and 
 have extracted the layers to create an animated desktop program/widget that has 
 action and realistic sound effects all encapsulated within a comic book cover.
 
+![about](https://github.com/yereverluvinunclebert/Commando-Ywidget/assets/2788342/e839ab74-556f-48ca-becd-1ad5626d4228)
+
 This widget was created I.T.S.O. (in the style of) a Commando Comic by DC Thompson. 
 Neither I nor SBD have any association with DC Thompson and the Commando Logo 
-was used here as an example of ‘fair-use’ in fan-art and as of course as mere-flattery.
+was used here as an example of â€˜fair-useâ€™ in fan-art and as of course as mere-flattery.
 This Widget is a moveable widget that you can move anywhere around the desktop 
 as you require.
 
@@ -55,6 +62,7 @@ Running the widget using a javascript engine frees javascript from running only
 within the captivity of a browser, you will now be able to run these widgets on 
 your Windows desktop as long as you have the correct widget engine installed.
 
+![yahoo-logo-small_111](https://github.com/yereverluvinunclebert/Commando-Ywidget/assets/2788342/c5f9aadd-9847-4364-b42f-08c80468b1a1)
 
  
 Instructions for running Yahoo widgets on Windows
